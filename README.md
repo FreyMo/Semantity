@@ -24,8 +24,8 @@ Console.WriteLine($"Memory in bytes: {memoryInBytes.Value} B");
 Type safety prevents you from making mistakes like the following:
 ```c#
 Length length = 0.4.Meters();
-Length lengthInMeter = length.In<Hertz>();    // Won't compile!
-Frequency frequency = length.In<Hertz>(); // Won't compile!
+Length lengthInMeter = length.In<Hertz>();  // Won't compile!
+Frequency frequency = length.In<Hertz>();   // Won't compile!
 ```
 
 The current implementation includes the following quantities:
