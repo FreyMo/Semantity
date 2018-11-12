@@ -4,7 +4,7 @@
 	{
 		public static Memory Bytes(this double value)
 		{
-			return new Memory(value, Byte.Instance);
+			return new Memory(value, MemoryQuantity.Bytes.Instance);
 		}
 
 		public static Memory KibiBytes(this double value)

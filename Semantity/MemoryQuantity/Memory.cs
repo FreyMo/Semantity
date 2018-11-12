@@ -8,7 +8,7 @@
 		{
 		}
 
-		public Memory(double value) : this(value, Byte.Instance)
+		public Memory(double value) : this(value, Bytes.Instance)
 		{
 		}
 
@@ -16,6 +16,6 @@
 		{
 		}
 
-		public override BaseUnit<Memory> BaseUnit => Byte.Instance;
+		public override BaseUnit<Memory> BaseUnit => Bytes.Instance;
 	}
 }

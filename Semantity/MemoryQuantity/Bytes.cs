@@ -2,9 +2,9 @@
 {
 	using Definitions;
 
-	public sealed class Byte : BaseUnit<Memory>
+	public sealed class Bytes : BaseUnit<Memory>
 	{
-		public static Byte Instance { get; } = new Byte();
+		public static Bytes Instance { get; } = new Bytes();
 
 		public override string Symbol => "B";
 	}
