@@ -15,10 +15,10 @@ Console.WriteLine($"Intesity: {intensity}");
 Each quantity has a base unit and multiple other units to which they can be converted easily:
 ```c#
 Length length = 0.4.Meters();
-Length lengthInMeter = length.In<CentiMeter>();
+Length lengthInCentiMeter = length.In<CentiMeter>();
 
-// Prints "Length in meter: 0.4 m"
-Console.WriteLine($"Length in meter: {lengthInMeter.Value} m");
+// Prints "Length in centimeter: 0.4 m"
+Console.WriteLine($"Length in centimeter: {lengthInCentiMeter.Value} m");
 ```
 
 Type safety prevents you from making mistakes like the following:
