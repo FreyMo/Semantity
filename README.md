@@ -14,17 +14,18 @@ Console.WriteLine($"Intesity: {intensity}");
 ```
 Each quantity has a base unit and multiple other units to which they can be converted easily:
 ```c#
-Length length = 0.4.Meters();
-Length lengthInCentiMeter = length.In<CentiMeter>();
+Memory memory = 2.KibiBytes();
+Memory memoryInBytes = memory.In<Bytes>();
 
-// Prints "Length in centimeter: 0.4 m"
-Console.WriteLine($"Length in centimeter: {lengthInCentiMeter.Value} m");
+// Prints "Memory in bytes: 2048 B"
+Console.WriteLine($"Memory in bytes: {memoryInBytes.Value} B");
 ```
 
 Type safety prevents you from making mistakes like the following:
 ```c#
 Length length = 0.4.Meters();
-Length lengthInMeter = length.In<Hertz>(); // Won't compile!
+Length lengthInMeter = length.In<Hertz>();    // Won't compile!
+Frequency frequency = length.In<Hertz>(); // Won't compile!
 ```
 
 The current implementation includes the following quantities:
