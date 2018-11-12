@@ -1,2 +1,41 @@
 # Semantity
-Semantic types for physical quantities and units of measurement
+
+This package provides semantic types for physical quantities and units of measurement. They are typesafe and offer convenient extensions in order to use them for calculations and display.
+
+## Usage
+
+The combination of operator overloading and extension methods simplifies the code drastically. Type inference allows for code like this:
+```c#
+var area = 40.MilliMeters() * 2.5.Meters();
+var intensity = 100.Watts() / area;
+
+// Prints "Intensity: 1000 W/m²"
+Console.WriteLine($"Intesity: {intensity}");
+```
+Each quantity has a base unit and multiple other units to which they can be converted easily:
+```c#
+Length length = 0.4.Meters();
+Length lengthInMeter = length.In<CentiMeter>();
+
+// Prints "Length in meter: 0.4 m"
+Console.WriteLine($"Length in meter: {lengthInMeter.Value} m");
+```
+
+Type safety prevents you from making mistakes like the following:
+```c#
+Length length = 0.4.Meters();
+Length lengthInMeter = length.In<Hertz>(); // Won't compile!
+```
+
+The current implementation includes the following quantities:
+* Area
+* Energy
+* Frequency
+* Intensity
+* Length
+* Memory
+* Power
+* Ratio
+* Temperature
+* Time
+* Velocity
