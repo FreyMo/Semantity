@@ -1,6 +1,6 @@
 ﻿namespace Semantity.Definitions
 {
-	public abstract class Unit<TPhysicalQuantity> : IUnitBase
+	public abstract class Unit<TPhysicalQuantity> : IUnit
 		where TPhysicalQuantity : IPhysicalQuantity<TPhysicalQuantity>
 	{
 		public abstract double FactorToBaseUnit { get; }

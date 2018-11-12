@@ -2,7 +2,7 @@
 {
 	using System;
 
-	public static class IntegerExtensions
+	public static class VelocityIntegerExtensions
 	{
 		public static Velocity MetersPerSecond(this int value)
 		{

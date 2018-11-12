@@ -2,7 +2,7 @@
 {
 	using System;
 
-	public static class IntegerExtensions
+	public static class MemoryIntegerExtensions
 	{
 		public static Memory Bytes(this int value)
 		{

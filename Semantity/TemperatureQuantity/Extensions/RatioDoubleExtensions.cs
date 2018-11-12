@@ -1,6 +1,6 @@
 ﻿namespace Semantity.TemperatureQuantity.Extensions
 {
-	public static class DoubleExtensions
+	public static class RatioDoubleExtensions
 	{
 		public static Temperature DegreesCelsius(this double value)
 		{

@@ -1,6 +1,6 @@
 ﻿namespace Semantity.FrequencyQuantity.Extensions
 {
-	public static class DoubleExtensions
+	public static class FrequencyDoubleExtensions
 	{
 		public static Frequency Hertz(this double value)
 		{

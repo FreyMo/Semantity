@@ -1,6 +1,6 @@
 ﻿namespace Semantity.RatioQuantity.Extensions
 {
-	public static class DoubleExtensions
+	public static class RatioDoubleExtensions
 	{
 		public static Ratio Percent(this double value)
 		{

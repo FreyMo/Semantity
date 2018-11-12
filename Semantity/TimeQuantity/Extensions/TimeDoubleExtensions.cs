@@ -1,6 +1,6 @@
 ﻿namespace Semantity.TimeQuantity.Extensions
 {
-	public static class DoubleExtensions
+	public static class TimeDoubleExtensions
 	{
 		public static Time Seconds(this double value)
 		{

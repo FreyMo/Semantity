@@ -1,6 +1,6 @@
 ﻿namespace Semantity.MemoryQuantity.Extensions
 {
-	public static class DoubleExtensions
+	public static class MemoryDoubleExtensions
 	{
 		public static Memory Bytes(this double value)
 		{

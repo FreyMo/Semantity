@@ -1,6 +1,6 @@
 ﻿namespace Semantity.Definitions
 {
-	public interface IUnitBase
+	public interface IUnit
 	{
 		string Symbol { get; }
 	}

@@ -1,6 +1,6 @@
 ﻿namespace Semantity.VelocityQuantity.Extensions
 {
-	public static class DoubleExtensions
+	public static class VelocityDoubleExtensions
 	{
 		public static Velocity MetersPerSecond(this double value)
 		{

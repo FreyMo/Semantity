@@ -1,10 +1,8 @@
 ﻿namespace Semantity.Definitions
 {
-	using System.Runtime.Serialization;
 	using ArgumentMust;
 	using Notification;
 
-	[DataContract]
 	public abstract class PhysicalQuantity<TPhysicalQuantity> : Bindable, IPhysicalQuantity<TPhysicalQuantity>
 		where TPhysicalQuantity : PhysicalQuantity<TPhysicalQuantity>, new()
 	{
@@ -26,18 +24,10 @@
 			set => Set(value);
 		}
 
-		public string UnitSymbol => Unit.Symbol;
-
 		public Unit<TPhysicalQuantity> Unit
 		{
 			get => Get<Unit<TPhysicalQuantity>>();
-			private set
-			{
-				if (Set(value))
-				{
-					OnPropertyChanged(nameof(UnitSymbol));
-				}
-			}
+			private set => Set(value);
 		}
 
 		public TPhysicalQuantity In<TUnit>() where TUnit : Unit<TPhysicalQuantity>, new()
@@ -74,7 +64,7 @@
 			ArgumentMust.NotBeNull(() => leftHandSide);
 			ArgumentMust.NotBeNull(() => rightHandSide);
 
-			return leftHandSide.InBaseUnit().Value == rightHandSide.InBaseUnit().Value;
+			return leftHandSide.ValueInBaseUnit == rightHandSide.ValueInBaseUnit;
 		}
 
 		public static bool operator !=(PhysicalQuantity<TPhysicalQuantity> leftHandSide, TPhysicalQuantity rightHandSide)
@@ -89,7 +79,7 @@
 
 			return new TPhysicalQuantity
 			{
-				Value = leftHandSide.ValueInBaseUnit + rightHandSide.InBaseUnit().Value,
+				Value = leftHandSide.ValueInBaseUnit + rightHandSide.ValueInBaseUnit,
 				Unit = leftHandSide.BaseUnit
 			};
 		}
@@ -101,7 +91,7 @@
 
 			return new TPhysicalQuantity
 			{
-				Value = leftHandSide.ValueInBaseUnit - rightHandSide.InBaseUnit().Value,
+				Value = leftHandSide.ValueInBaseUnit - rightHandSide.ValueInBaseUnit,
 				Unit = leftHandSide.BaseUnit
 			};
 		}
@@ -111,7 +101,7 @@
 			ArgumentMust.NotBeNull(() => leftHandSide);
 			ArgumentMust.NotBeNull(() => rightHandSide);
 
-			return leftHandSide.ValueInBaseUnit / rightHandSide.InBaseUnit().Value;
+			return leftHandSide.ValueInBaseUnit / rightHandSide.ValueInBaseUnit;
 		}
 
 		public static TPhysicalQuantity operator *(PhysicalQuantity<TPhysicalQuantity> leftHandSide, double rightHandSide)
@@ -137,14 +127,14 @@
 
 			return new TPhysicalQuantity
 			{
-				Value = leftHandSide.ValueInBaseUnit / rightHandSide,
-				Unit = leftHandSide.BaseUnit
+				Value = leftHandSide.Value / rightHandSide,
+				Unit = leftHandSide.Unit
 			};
 		}
 
 		public override string ToString()
 		{
-			return Value + " " + UnitSymbol;
+			return $"{Value} {Unit.Symbol}";
 		}
 	}
 }

@@ -1,6 +1,6 @@
 ﻿namespace Semantity.EnergyQuantity.Extensions
 {
-	public static class DoubleExtensions
+	public static class EnergyDoubleExtensions
 	{
 		public static Energy Joules(this double value)
 		{

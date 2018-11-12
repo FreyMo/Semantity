@@ -2,7 +2,7 @@
 {
 	using System;
 
-	public static class IntegerExtensions
+	public static class RatioIntegerExtensions
 	{
 		public static Ratio Percent(this int value)
 		{

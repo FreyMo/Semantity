@@ -1,9 +1,7 @@
 ﻿namespace Semantity.FrequencyQuantity
 {
-	using System.Runtime.Serialization;
 	using Definitions;
 
-	[DataContract]
 	public class Frequency : PhysicalQuantity<Frequency>
 	{
 		public Frequency() : this(default(double))

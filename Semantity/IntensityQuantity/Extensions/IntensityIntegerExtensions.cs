@@ -2,7 +2,7 @@
 {
 	using System;
 
-	public static class IntegerExtensions
+	public static class IntensityIntegerExtensions
 	{
 		public static Intensity WattsPerSquareMeter(this int value)
 		{

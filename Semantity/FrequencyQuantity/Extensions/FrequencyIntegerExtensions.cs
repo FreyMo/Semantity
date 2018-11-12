@@ -2,7 +2,7 @@
 {
 	using System;
 
-	public static class IntegerExtensions
+	public static class FrequencyIntegerExtensions
 	{
 		public static Frequency Hertz(this int value)
 		{

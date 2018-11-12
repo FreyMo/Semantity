@@ -1,6 +1,6 @@
 ﻿namespace Semantity.LengthQuantity.Extensions
 {
-	public static class DoubleExtensions
+	public static class LengthDoubleExtensions
 	{
 		public static Length MilliMeters(this double value)
 		{

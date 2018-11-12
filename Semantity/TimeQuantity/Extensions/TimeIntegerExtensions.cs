@@ -2,7 +2,7 @@
 {
 	using System;
 
-	public static class IntegerExtensions
+	public static class TimeIntegerExtensions
 	{
 		public static Time Seconds(this int value)
 		{

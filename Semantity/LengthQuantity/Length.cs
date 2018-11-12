@@ -35,7 +35,7 @@
 			ArgumentMust.NotBeNull(() => leftHandSide);
 			ArgumentMust.NotBeNull(() => rightHandSide);
 
-			return new Area(leftHandSide.ValueInBaseUnit / rightHandSide.ValueInBaseUnit);
+			return new Area(leftHandSide.ValueInBaseUnit * rightHandSide.ValueInBaseUnit);
 		}
 	}
 }

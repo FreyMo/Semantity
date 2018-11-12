@@ -2,7 +2,7 @@
 {
 	using System;
 
-	public static class IntegerExtensions
+	public static class LengthIntegerExtensions
 	{
 		public static Length MilliMeters(this int value)
 		{

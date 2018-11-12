@@ -2,7 +2,7 @@
 {
 	using System;
 
-	public static class IntegerExtensions
+	public static class EnergyIntegerExtensions
 	{
 		public static Energy Joules(this int value)
 		{

@@ -1,6 +1,6 @@
 ﻿namespace Semantity.IntensityQuantity.Extensions
 {
-	public static class DoubleExtensions
+	public static class IntensityDoubleExtensions
 	{
 		public static Intensity WattsPerSquareMeter(this double value)
 		{

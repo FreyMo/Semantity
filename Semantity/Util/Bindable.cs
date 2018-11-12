@@ -1,6 +1,5 @@
 ﻿namespace Semantity.Notification
 {
-	using System;
 	using System.Collections.Generic;
 	using System.ComponentModel;
 	using System.Runtime.CompilerServices;
@@ -10,7 +9,6 @@
 	{
 		private readonly Dictionary<string, object> _propertyFieldDictionary = new Dictionary<string, object>();
 
-		[field: NonSerialized]
 		public event PropertyChangedEventHandler PropertyChanged;
 
 		protected void OnPropertyChanged([CallerMemberName] string propertyName = null)

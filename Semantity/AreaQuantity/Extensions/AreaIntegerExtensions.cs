@@ -2,7 +2,7 @@
 {
 	using System;
 
-	public static class IntegerExtensions
+	public static class AreaIntegerExtensions
 	{
 		public static Area SquareMeters(this int value)
 		{

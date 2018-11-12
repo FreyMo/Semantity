@@ -1,6 +1,6 @@
 ﻿namespace Semantity.AreaQuantity.Extensions
 {
-	public static class DoubleExtensions
+	public static class AreaDoubleExtensions
 	{
 		public static Area SquareMeters(this double value)
 		{
