@@ -3,6 +3,7 @@
 	using Definitions;
 	using EnergyQuantity;
 	using PowerQuantity;
+	using Util.ArgumentMust;
 
 	public class Time : PhysicalQuantity<Time>
 	{
@@ -22,6 +23,9 @@
 
 		public static Energy operator *(Time leftHandSide, Power rightHandSide)
 		{
+			ArgumentMust.NotBeNull(() => leftHandSide);
+			ArgumentMust.NotBeNull(() => rightHandSide);
+
 			return rightHandSide * leftHandSide;
 		}
 	}

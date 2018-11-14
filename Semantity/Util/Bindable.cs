@@ -1,9 +1,8 @@
-﻿namespace Semantity.Notification
+﻿namespace Semantity.Util
 {
 	using System.Collections.Generic;
 	using System.ComponentModel;
 	using System.Runtime.CompilerServices;
-	using Extensions;
 
 	public abstract class Bindable : INotifyPropertyChanged
 	{

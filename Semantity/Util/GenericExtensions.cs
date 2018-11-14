@@ -1,4 +1,4 @@
-﻿namespace Semantity.Extensions
+﻿namespace Semantity.Util
 {
 	using System.Collections.Generic;
 

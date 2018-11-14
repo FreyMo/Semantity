@@ -18,5 +18,10 @@
 		{
 			return Convert.ToDouble(value).SquareMilliMeters();
 		}
+
+		public static Area SquareKiloMeters(this int value)
+		{
+			return Convert.ToDouble(value).SquareKiloMeters();
+		}
 	}
 }

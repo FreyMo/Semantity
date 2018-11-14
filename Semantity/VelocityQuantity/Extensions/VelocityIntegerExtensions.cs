@@ -18,5 +18,10 @@
 		{
 			return Convert.ToDouble(value).MillimetersPerSecond();
 		}
+
+		public static Velocity MilesPerHour(this int value)
+		{
+			return Convert.ToDouble(value).MilesPerHour();
+		}
 	}
 }

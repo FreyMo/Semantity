@@ -1,11 +1,11 @@
 ﻿namespace Semantity.PowerQuantity
 {
 	using AreaQuantity;
-	using ArgumentMust;
 	using Definitions;
 	using EnergyQuantity;
 	using IntensityQuantity;
 	using TimeQuantity;
+	using Util.ArgumentMust;
 
 	public class Power : PhysicalQuantity<Power>
 	{

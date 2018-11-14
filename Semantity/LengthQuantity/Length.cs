@@ -1,10 +1,11 @@
 ﻿namespace Semantity.LengthQuantity
 {
 	using AreaQuantity;
-	using ArgumentMust;
 	using Definitions;
 	using TimeQuantity;
+	using Util.ArgumentMust;
 	using VelocityQuantity;
+	using VolumeQuantity;
 
 	public sealed class Length : PhysicalQuantity<Length>
 	{
@@ -36,6 +37,14 @@
 			ArgumentMust.NotBeNull(() => rightHandSide);
 
 			return new Area(leftHandSide.ValueInBaseUnit * rightHandSide.ValueInBaseUnit);
+		}
+
+		public static Volume operator *(Length leftHandSide, Area rightHandSide)
+		{
+			ArgumentMust.NotBeNull(() => leftHandSide);
+			ArgumentMust.NotBeNull(() => rightHandSide);
+
+			return rightHandSide * leftHandSide;
 		}
 	}
 }

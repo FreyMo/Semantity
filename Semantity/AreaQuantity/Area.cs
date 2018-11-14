@@ -1,10 +1,11 @@
 ﻿namespace Semantity.AreaQuantity
 {
-	using ArgumentMust;
 	using Definitions;
 	using IntensityQuantity;
 	using LengthQuantity;
 	using PowerQuantity;
+	using Util.ArgumentMust;
+	using VolumeQuantity;
 
 	public sealed class Area : PhysicalQuantity<Area>
 	{
@@ -32,7 +33,18 @@
 
 		public static Power operator *(Area leftHandSide, Intensity rightHandSide)
 		{
+			ArgumentMust.NotBeNull(() => leftHandSide);
+			ArgumentMust.NotBeNull(() => rightHandSide);
+
 			return rightHandSide * leftHandSide;
+		}
+
+		public static Volume operator *(Area leftHandSide, Length rightHandSide)
+		{
+			ArgumentMust.NotBeNull(() => leftHandSide);
+			ArgumentMust.NotBeNull(() => rightHandSide);
+
+			return new Volume(leftHandSide.ValueInBaseUnit * rightHandSide.ValueInBaseUnit);
 		}
 	}
 }

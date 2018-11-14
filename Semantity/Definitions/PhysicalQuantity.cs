@@ -1,7 +1,7 @@
 ﻿namespace Semantity.Definitions
 {
-	using ArgumentMust;
-	using Notification;
+	using Util;
+	using Util.ArgumentMust;
 
 	public abstract class PhysicalQuantity<TPhysicalQuantity> : Bindable, IPhysicalQuantity<TPhysicalQuantity>
 		where TPhysicalQuantity : PhysicalQuantity<TPhysicalQuantity>, new()

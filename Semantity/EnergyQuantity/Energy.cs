@@ -1,9 +1,9 @@
 ﻿namespace Semantity.EnergyQuantity
 {
-	using ArgumentMust;
 	using Definitions;
 	using PowerQuantity;
 	using TimeQuantity;
+	using Util.ArgumentMust;
 
 	public class Energy : PhysicalQuantity<Energy>
 	{

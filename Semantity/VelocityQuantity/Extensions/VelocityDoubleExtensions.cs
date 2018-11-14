@@ -16,5 +16,10 @@
 		{
 			return new Velocity(value, MillimeterPerSecond.Instance);
 		}
+
+		public static Velocity MilesPerHour(this double value)
+		{
+			return new Velocity(value, MilePerHour.Instance);
+		}
 	}
 }

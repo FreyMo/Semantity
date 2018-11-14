@@ -16,5 +16,10 @@
 		{
 			return new Area(value, SquareMilliMeter.Instance);
 		}
+
+		public static Area SquareKiloMeters(this double value)
+		{
+			return new Area(value, SquareKiloMeter.Instance);
+		}
 	}
 }

@@ -1,9 +1,9 @@
 ﻿namespace Semantity.IntensityQuantity
 {
 	using AreaQuantity;
-	using ArgumentMust;
 	using Definitions;
 	using PowerQuantity;
+	using Util.ArgumentMust;
 
 	public class Intensity : PhysicalQuantity<Intensity>
 	{

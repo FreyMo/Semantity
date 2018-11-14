@@ -1,4 +1,4 @@
-﻿namespace Semantity.ArgumentMust
+﻿namespace Semantity.Util.ArgumentMust
 {
 	using System;
 	using System.Diagnostics;

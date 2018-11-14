@@ -1,4 +1,4 @@
-﻿namespace Semantity.Predicates
+﻿namespace Semantity.Util.Predicates
 {
 	using System;
 
