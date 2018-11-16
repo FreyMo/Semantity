@@ -29,7 +29,7 @@ Frequency frequency = mass.In<Hertz>(); // Won't compile!
 ```
 
 The basic arithmetic operations are implemented generically:
-```
+``` c#
 Console.WriteLine(1.5.Seconds() + 500.MilliSeconds());      // Prints "2 s"
 Console.WriteLine(1.CubicMeters() - 200.Liters());          // Prints "0.8 m³"
 Console.WriteLine(10e6.PartsPerMillion() * 100.Percent());  // Prints "1 "
