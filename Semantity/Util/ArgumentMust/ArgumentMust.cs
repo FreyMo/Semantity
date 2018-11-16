@@ -3,7 +3,7 @@
 	using System;
 	using System.Diagnostics;
 
-	public static class ArgumentMust
+	internal static class ArgumentMust
 	{
 		[DebuggerHidden]
 		public static void NotBeNull<T>(Func<T> argumentFunc) where T : class

@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <Version>0.2.0</Version>
+    <Version>0.3.0</Version>
     <Authors>Moritz Freyburger</Authors>
     <Owners>Moritz Freyburger</Owners>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>

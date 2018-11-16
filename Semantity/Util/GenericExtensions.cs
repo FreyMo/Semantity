@@ -2,7 +2,7 @@
 {
 	using System.Collections.Generic;
 
-	public static class GenericExtensions
+	internal static class GenericExtensions
 	{
 		public static bool EqualityEquals<T>(this T source, T target)
 		{
