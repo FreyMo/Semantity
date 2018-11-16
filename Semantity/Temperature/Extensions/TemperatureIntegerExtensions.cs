@@ -2,7 +2,7 @@
 {
 	using System;
 
-	public static class RatioIntegerExtensions
+	public static class TemperatureIntegerExtensions
 	{
 		public static Temperature DegreesCelsius(this int value)
 		{

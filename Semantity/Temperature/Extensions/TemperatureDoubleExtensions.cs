@@ -1,6 +1,6 @@
 ﻿namespace Semantity
 {
-	public static class RatioDoubleExtensions
+	public static class TemperatureDoubleExtensions
 	{
 		public static Temperature DegreesCelsius(this double value)
 		{
