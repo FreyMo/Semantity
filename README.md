@@ -10,7 +10,7 @@ var area = 40.MilliMeters() * 2.5.Meters();
 var intensity = 100.Watts() / area;
 
 // Prints "Intensity: 1000 W/m²"
-Console.WriteLine($"Intesity: {intensity}");
+Console.WriteLine($"Intensity: {intensity}");
 ```
 Each quantity has a base unit and multiple other units to which they can be converted easily:
 ```c#
