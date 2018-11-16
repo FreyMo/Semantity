@@ -29,14 +29,17 @@ Frequency frequency = length.In<Hertz>();   // Won't compile!
 ```
 
 The current implementation includes the following quantities:
+* Acceleration
 * Area
 * Energy
 * Frequency
 * Intensity
 * Length
+* Mass
 * Memory
 * Power
 * Ratio
 * Temperature
 * Time
 * Velocity
+* Volume
