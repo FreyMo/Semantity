@@ -4,7 +4,7 @@ This package provides semantic types for physical quantities and units of measur
 
 ## NuGet
 
-Please find the NuGet package [here](https://www.nuget.org/packages/Semantity/).
+Please find the latest NuGet package [here](https://www.nuget.org/packages/Semantity/).
 
 ## Usage
 
