@@ -56,4 +56,8 @@ The current implementation includes the following quantities:
 * Velocity
 * Volume
 
+Soon to come:
+* Density
+* Force
+
 If you have any suggestions or requests regarding **Semantity** feel free to [contact me](mailto:moritz.freyburger@gmx.de).
