@@ -1,6 +1,7 @@
 ﻿namespace Semantity
 {
 	using Definitions;
+	using Util.ArgumentMust;
 
 	public class Mass : PhysicalQuantity<Mass>
 	{
@@ -17,5 +18,13 @@
 		}
 
 		public override BaseUnit<Mass> BaseUnit => KiloGram.Instance;
+
+		public static Density operator /(Mass leftHandSide, Volume rightHandSide)
+		{
+			ArgumentMust.NotBeNull(() => leftHandSide);
+			ArgumentMust.NotBeNull(() => rightHandSide);
+
+			return new Density(leftHandSide.ValueInBaseUnit / rightHandSide.ValueInBaseUnit);
+		}
 	}
 }
