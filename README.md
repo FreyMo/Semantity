@@ -2,6 +2,10 @@
 
 This package provides semantic types for physical quantities and units of measurement. They are typesafe and offer convenient extensions in order to use them for calculations and display.
 
+## NuGet
+
+Please find the NuGet package [here](https://www.nuget.org/packages/Semantity/).
+
 ## Usage
 
 The combination of operator overloading and extension methods simplifies the code drastically. Type inference allows for code like this:
@@ -51,3 +55,5 @@ The current implementation includes the following quantities:
 * Time
 * Velocity
 * Volume
+
+If you have any suggestions or requests regarding **Semantity** feel free to [contact me](mailto:moritz.freyburger@gmx.de).
