@@ -45,6 +45,7 @@ The current implementation includes the following quantities:
 * Area
 * Density
 * Energy
+* Force
 * Frequency
 * Intensity
 * Length
@@ -56,8 +57,5 @@ The current implementation includes the following quantities:
 * Time
 * Velocity
 * Volume
-
-Soon to come:
-* Force
 
 If you have any suggestions or requests regarding **Semantity** feel free to [contact me](mailto:moritz.freyburger@gmx.de).
