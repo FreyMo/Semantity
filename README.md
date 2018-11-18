@@ -58,4 +58,8 @@ The current implementation includes the following quantities:
 * Velocity
 * Volume
 
+Next steps:
+* Handle Serialization better
+* Provide metric and imperial type safety
+
 If you have any suggestions or requests regarding **Semantity** feel free to [contact me](mailto:moritz.freyburger@gmx.de).
