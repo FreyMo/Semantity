@@ -60,6 +60,6 @@ The current implementation includes the following quantities:
 
 Next steps:
 * Handle Serialization better
-* Provide metric and imperial type safety
+* Provide metric and imperial semantic
 
 If you have any suggestions or requests regarding **Semantity** feel free to [contact me](mailto:moritz.freyburger@gmx.de).
