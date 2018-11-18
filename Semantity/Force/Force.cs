@@ -27,7 +27,6 @@
 			return new Mass(leftHandSide.ValueInBaseUnit / rightHandSide.ValueInBaseUnit);
 		}
 
-
 		public static Acceleration operator /(Force leftHandSide, Mass rightHandSide)
 		{
 			ArgumentMust.NotBeNull(() => leftHandSide);
