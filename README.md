@@ -4,7 +4,7 @@ This package provides semantic types for physical quantities and units of measur
 
 ## NuGet
 
-Please find the NuGet package [here](https://www.nuget.org/packages/Semantity/).
+Please find the latest NuGet package [here](https://www.nuget.org/packages/Semantity/).
 
 ## Usage
 
@@ -43,6 +43,7 @@ Console.WriteLine(2.Joules() / 100.MilliJoules());          // Prints "20 J"
 The current implementation includes the following quantities:
 * Acceleration
 * Area
+* Density
 * Energy
 * Frequency
 * Intensity
@@ -57,7 +58,6 @@ The current implementation includes the following quantities:
 * Volume
 
 Soon to come:
-* Density
 * Force
 
 If you have any suggestions or requests regarding **Semantity** feel free to [contact me](mailto:moritz.freyburger@gmx.de).
