@@ -16,5 +16,10 @@
 		{
 			return new Mass(value, MilliGram.Instance);
 		}
+
+		public static Mass Tonnes(this double value)
+		{
+			return new Mass(value, Tonne.Instance);
+		}
 	}
 }

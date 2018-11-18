@@ -18,5 +18,10 @@
 		{
 			return Convert.ToDouble(value).MilliGrams();
 		}
+
+		public static Mass Tonnes(this int value)
+		{
+			return Convert.ToDouble(value).Tonnes();
+		}
 	}
 }

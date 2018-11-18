@@ -26,5 +26,13 @@
 
 			return new Density(leftHandSide.ValueInBaseUnit / rightHandSide.ValueInBaseUnit);
 		}
+
+		public static Force operator *(Mass leftHandSide, Acceleration rightHandSide)
+		{
+			ArgumentMust.NotBeNull(() => leftHandSide);
+			ArgumentMust.NotBeNull(() => rightHandSide);
+
+			return new Force(leftHandSide.ValueInBaseUnit * rightHandSide.ValueInBaseUnit);
+		}
 	}
 }

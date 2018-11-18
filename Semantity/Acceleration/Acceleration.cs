@@ -26,5 +26,13 @@
 
 			return new Velocity(leftHandSide.ValueInBaseUnit * rightHandSide.ValueInBaseUnit);
 		}
+
+		public static Force operator *(Acceleration leftHandSide, Mass rightHandSide)
+		{
+			ArgumentMust.NotBeNull(() => leftHandSide);
+			ArgumentMust.NotBeNull(() => rightHandSide);
+
+			return rightHandSide * leftHandSide;
+		}
 	}
 }
