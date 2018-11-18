@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <Version>0.3.0</Version>
+    <Version>0.4.0</Version>
     <Authors>Moritz Freyburger</Authors>
     <Owners>Moritz Freyburger</Owners>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -11,7 +11,8 @@
     <PackageLicenseUrl>https://raw.githubusercontent.com/FreyMo/Semantity/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/FreyMo/Semantity</PackageProjectUrl>
     <RepositoryUrl>https://github.com/FreyMo/Semantity</RepositoryUrl>
-    <PackageTags>quantity, quantities, physical, unit, measurement, semantic</PackageTags>
+    <PackageTags>quantity, quantities, physical, unit, measurement, semantic, dimension</PackageTags>
+    <PackageReleaseNotes>Added Force and Mass</PackageReleaseNotes>
   </PropertyGroup>
 
 </Project>
