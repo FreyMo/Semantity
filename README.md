@@ -61,7 +61,7 @@ The current implementation includes the following quantities:
 * Volume
 
 Next steps:
-* Handle Serialization better
+* Improve serialization
 * Provide metric and imperial semantic
 
 If you have any suggestions or requests regarding **Semantity** feel free to [contact me](mailto:moritz.freyburger@gmx.de).
