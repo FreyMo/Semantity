@@ -1,12 +1,11 @@
 [![Build Status](https://dev.azure.com/moritzfreyburger0423/Semantity%20Build/_apis/build/status/FreyMo.Semantity?branchName=master)](https://dev.azure.com/moritzfreyburger0423/Semantity%20Build/_build/latest?definitionId=1?branchName=master)
+[![](https://img.shields.io/azure-devops/build/moritzfreyburger0423/Semantity%20Build/1/master.svg)](https://dev.azure.com/moritzfreyburger0423/Semantity%20Build/_build/latest?definitionId=1?branchName=master)
+
+[![nuget](https://img.shields.io/nuget/v/Semantity.svg)](https://www.nuget.org/packages/Semantity)
 
 # Semantity
 
 This package provides semantic types for physical quantities and units of measurement. They are typesafe and offer convenient extensions in order to use them for calculations and display.
-
-## NuGet
-
-Please find the latest NuGet package [here](https://www.nuget.org/packages/Semantity/).
 
 ## Usage
 
