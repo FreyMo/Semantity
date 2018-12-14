@@ -1,6 +1,7 @@
-[![Build Status](https://dev.azure.com/moritzfreyburger0423/Semantity%20Build/_apis/build/status/FreyMo.Semantity?branchName=master)](https://dev.azure.com/moritzfreyburger0423/Semantity%20Build/_build/latest?definitionId=1?branchName=master)
-[![](https://img.shields.io/azure-devops/build/moritzfreyburger0423/Semantity%20Build/1/master.svg)](https://dev.azure.com/moritzfreyburger0423/Semantity%20Build/_build/latest?definitionId=1?branchName=master)
+[![azure pipeline](https://dev.azure.com/moritzfreyburger0423/Semantity%20Build/_apis/build/status/FreyMo.Semantity?branchName=master)](https://dev.azure.com/moritzfreyburger0423/Semantity%20Build/_build/latest?definitionId=1?branchName=master)
+[![build](https://img.shields.io/azure-devops/build/moritzfreyburger0423/Semantity%20Build/1/master.svg)](https://dev.azure.com/moritzfreyburger0423/Semantity%20Build/_build/latest?definitionId=1?branchName=master)
 [![nuget](https://img.shields.io/nuget/v/Semantity.svg)](https://www.nuget.org/packages/Semantity)
+[![nuget downloads](https://img.shields.io/nuget/dt/Semantity.svg)](https://www.nuget.org/packages/Semantity)
 
 # Semantity
 
